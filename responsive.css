@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background: #eaeaea;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+    padding: 14px 16px;
+}
+ul li a{
+    text-decoration: none;
+    color: #111;
+}
+ul li:hover{
+    background: #fff;
+    color: #111;
+}
+.title{
+    text-transform: uppercase;
+    font-size: 32px;
+    padding: 10px;
+    text-align: center;
+}
+.title-content{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.4;
+}
+.section{
+    display: flex;
+    padding-top: 15px;
+}
+.partition1{
+    width: 50%;
+    height: 300px;
+    background: url('../shaku/img/3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.partition2{
+    width: 50%;
+    height: 300px;
+    background: url('../shaku/img/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* responsive codes */
+@media screen and (max-width:400px){
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .title-content{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        padding: 0 5px;
+    }
+    .partition1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .partition2{
+        width: 100%;
+}
